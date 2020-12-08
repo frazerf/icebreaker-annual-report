@@ -531,27 +531,6 @@
 
       // Run the animation on all elements with a class of ‘countup’
     </script>
-    <script>
-      var waypoint = new Waypoint({
-        element: document.getElementById("basic-waypoint"),
-        handler: function () {
-          const countupEls = document.querySelectorAll(".countup");
-          countupEls.forEach(animateCountUp);
-          $(".figures h2").addClass("selected");
-          this.destroy();
-        },
-        offset: 300,
-      });
-
-      var waypoint = new Waypoint({
-        element: document.getElementById("myChart"),
-        handler: function () {
-          start_count();
-          this.destroy();
-        },
-        offset: 400,
-      });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script>
       function start_count() {
@@ -587,6 +566,27 @@
           },
         });
       }
+    </script>
+    <script>
+      var waypoint = new Waypoint({
+        element: document.getElementById("basic-waypoint"),
+        handler: function () {
+          const countupEls = document.querySelectorAll(".countup");
+          countupEls.forEach(animateCountUp);
+          $(".figures h2").addClass("selected");
+          this.destroy();
+        },
+        offset: 300,
+      });
+
+      var waypoint = new Waypoint({
+        element: document.getElementById("myChart"),
+        handler: function () {
+          start_count();
+          this.destroy();
+        },
+        offset: 400,
+      });
     </script>
   </body>
 </html>
