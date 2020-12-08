@@ -1,0 +1,18 @@
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 4;
+  position: fixed;
+}
+
+.logo {
+  position: absolute;
+  top: 25px;
+  left: $gutter-width;
+  font-size: 30px;
+  letter-spacing: -4px;
+  font-weight: 700;
+  .overflow-hidden & {
+    color: $brand-primary;
+  }
+}

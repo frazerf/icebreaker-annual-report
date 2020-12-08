@@ -1,0 +1,36 @@
+.button {
+    background: $brand-primary;
+    font-size: 13px;
+    margin-top: 40px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'lato';
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: white;
+    letter-spacing: 2px;
+    transition: 300ms all ease-in-out;
+    span {
+        background-image: url('../img/arrow-link.svg');
+        width: 15px;
+        height: 11px;
+        background-size: cover;
+        display: inline-block;
+        margin-left: 5px;
+        transition: 300ms all ease-in-out;
+    }
+    &:hover {
+        background: lighten($brand-primary, 10%);
+        span {
+            margin-left: 10px;
+        }
+    }
+    &--no-style {
+        background: transparent;
+        padding: 10px 0;
+        border-bottom: 2px solid white;
+        &:hover {
+            background: transparent;
+        }
+    }
+}

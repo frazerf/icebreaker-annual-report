@@ -1,0 +1,42 @@
+/* ==========================================================================
+Global Variables
+========================================================================== */
+// @import url('https://fonts.googleapis.com/css?family=Lato:400|Roboto:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900|Raleway:400,600,700');
+/* --- Typography --- */
+
+$font-sans-serif: 'Raleway', sans-serif;
+
+/* --- Image Path --- */
+
+$image-path: "../../images/";
+
+/* --- Base Colours Black/White --- */
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+/* --- Brand Colours --- */
+
+$brand-primary: #2f60a2;
+$brand-secondary: #4a5a5c;
+
+$bg-primary: #e2e8eb;
+
+/* --- Link Colours --- */
+
+$link-primary: #555555;
+$link-primary-hover: #aaaaaa;
+
+/* --- Rounded corners --- */
+
+$gutter-width: 5%;
+
+/* --- Rounded corners --- */
+
+$round-corners: 3px;
+
+/* --- Animations --- */
+
+$base-duration: 300ms;
+$link-animation: color $base-duration ease-in-out;
